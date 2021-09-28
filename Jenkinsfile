@@ -29,6 +29,7 @@ pipeline {
         // Always runs. And it runs before any of the other post conditions.
         always {
             echo "Always"
+            implementIoBuildEnded()
         }
         success {
             echo "Success"
