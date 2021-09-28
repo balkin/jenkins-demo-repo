@@ -10,10 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                step([$class: 'ImplementIoBuilder', branch: 'branchName'])
-                echo 'Building..1'
                 implementIoBuildStarted()
-                echo 'Building..2'
             }
         }
         stage('Test') {
