@@ -28,8 +28,9 @@ pipeline {
     post {
         // Always runs. And it runs before any of the other post conditions.
         always {
-            echo "Always"
-            implementIoBuildEnded()
+            echo "Always0"
+            implementIoBuildEnded
+            echo "Always1"
         }
         success {
             echo "Success"
