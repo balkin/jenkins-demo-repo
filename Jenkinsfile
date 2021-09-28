@@ -31,7 +31,7 @@ pipeline {
             echo "Always0"
             implementIoBuildEnded()
             echo "Always1"
-            step([$class: 'ImplementIoBuilder', branch: 'branchName'])
+            step([$class: 'ImplementIoBuilder', branch: 'branchName', repoName: 'jenkins-demo-repo', repoFullName: 'balkin/jenkins-demo-repo'])
             echo "Always2"
         }
         success {
