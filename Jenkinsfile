@@ -31,8 +31,6 @@ pipeline {
         always {
             echo "Always0"
             implementIoBuildEnded()
-            echo "Always1"
-            step([$class: 'ImplementIoNotifier', branch: 'branchName'])
             echo "Always2"
         }
         success {
