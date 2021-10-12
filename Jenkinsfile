@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                implementIoBuildStarted buildEnvironment: "OTHER"
+                implementIoBuildStarted buildEnvironment: "MEDVED"
             }
         }
         stage('Test') {
