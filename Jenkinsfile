@@ -1,3 +1,7 @@
+import java.util.logging.Logger
+
+final log = Logger.getLogger('org.example.jobdsl')
+
 pipeline {
     agent any
 
