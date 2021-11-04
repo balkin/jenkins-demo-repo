@@ -1,6 +1,6 @@
-import java.util.logging.Logger
-
-final log = Logger.getLogger('org.example.jobdsl')
+final log = {
+    "info": {}
+}
 
 pipeline {
     agent any
