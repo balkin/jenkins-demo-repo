@@ -1,6 +1,6 @@
-final log = {
-    "info": {}
-}
+final log = [
+    "info": { }
+]
 
 pipeline {
     agent any
